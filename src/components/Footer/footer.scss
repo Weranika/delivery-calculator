@@ -1,0 +1,40 @@
+@import '../../global/library';
+
+$FOOTER--PADDING: 15px;
+$GITHUB-ICON--HEIGHT: 32px;
+
+.footer {
+  width: $FOOTER-WIDTH;
+  background-color: $MAIN-COLOR--PRIMARY-DARK;
+}
+.footer__container {
+  @include flex(space-between);
+  height: $FOOTER-HEIGHT;
+  padding: $FOOTER--PADDING;
+  @include font(20px, TitanOne-Regular);
+  flex-shrink: 0;
+  color: $MAIN-COLOR--SECONDARY;
+  max-width: $BODY-CONTAINER--WIDTH;
+  margin: 0 auto;
+}
+.footer__content {
+  @include flex(space-between);
+  width: 30%;
+  font-size: 12px;
+  .mail__container {
+    @include flex(space-between);
+  }
+}
+.link__icon {
+  height: $GITHUB-ICON--HEIGHT;
+  margin-right: 8px;
+}
+.github-link__icon {
+  filter: invert(100%);
+}
+/*******************************************media*****************************************/
+@media only screen and (max-width: 450px) {
+  .mail {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../global/library';
+
+$HEADER--PADDING: 15px;
+$HEADER--BORDER-BOTTOM: 5px solid;
+
+.header {
+  @include flex(space-between);
+  height: $HEADER--HEIGHT;
+  padding: $HEADER--PADDING;
+  @include font(20px, TitanOne-Regular);
+  background-color: $MAIN-COLOR--PRIMARY;
+  flex-shrink: 0;
+  color: $MAIN-COLOR--SECONDARY-LIGHT;
+  border-bottom: $HEADER--BORDER-BOTTOM;
+  --angle: 0deg;
+  border-image: linear-gradient(var(--angle), $MAIN-COLOR--LIGHT, $MAIN-COLOR--SECONDARY-LIGHT) 1;
+  animation: 5s rotate linear infinite;
+}
+.header-container {
+  width: $BODY-CONTAINER--WIDTH;
+  margin: 0 auto;
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}

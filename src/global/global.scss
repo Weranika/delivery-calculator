@@ -1,0 +1,28 @@
+@import './library';
+
+.body__container {
+  min-width: $BODY-CONTAINER--MIN-WIDTH;
+  background-color: $MAIN-COLOR--PRIMARY;
+  margin: 0 auto;
+  min-height: $BODY--MIN-HEIGHT;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:active {
+    color: $MAIN-COLOR--PRIMARY;
+  }
+}
+/*******************************font-face***********************************/
+@font-face {
+  font-family: "OpenSans"; 
+  src: url('../assets/fonts/open-sans.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitanOne-Regular"; 
+  src: url('../assets/fonts/TitanOne-Regular.woff') format('woff');
+  font-style: normal;
+}

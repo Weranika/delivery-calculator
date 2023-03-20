@@ -1,0 +1,27 @@
+$MAIN-COLOR--PRIMARY: #3c322b;
+$MAIN-COLOR--PRIMARY-DARK: #282524;
+$MAIN-COLOR--PRIMARY-LIGHT: #8c8d85;
+$MAIN-COLOR--LIGHT: rgb(203, 203, 203);
+$MAIN-COLOR--SECONDARY: #146c73;
+$MAIN-COLOR--SECONDARY-LIGHT: rgb(30, 163, 172);
+$MAIN-COLOR--SECONDARY-DARK: #0d4246;
+
+$BODY-CONTAINER--WIDTH: 1700px;
+$BODY-CONTAINER--MIN-WIDTH: 320px;
+$BODY--MIN-HEIGHT: 100vh;
+
+$HEADER--HEIGHT: 67px;
+
+$FOOTER-HEIGHT: 30px;
+$FOOTER-WIDTH: 100vw;
+
+@mixin flex ($justify-content, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+@mixin font ($size, $font, $weight: normal) {
+  font-size: $size;
+  font-family: $font;
+  font-weight: $weight;
+}

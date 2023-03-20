@@ -1,0 +1,51 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 67px;
+  padding: 15px;
+  font-size: 20px;
+  font-family: TitanOne-Regular;
+  font-weight: normal;
+  background-color: #3c322b;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #1ea3ac;
+  border-bottom: 5px solid;
+  --angle: 0deg;
+  -o-border-image: linear-gradient(var(--angle), #cbcbcb, #1ea3ac) 1;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--angle)), color-stop(#cbcbcb), to(#1ea3ac)) 1;
+     border-image: linear-gradient(var(--angle), #cbcbcb, #1ea3ac) 1;
+  -webkit-animation: 5s rotate linear infinite;
+          animation: 5s rotate linear infinite;
+}
+
+.header-container {
+  width: 1700px;
+  margin: 0 auto;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+/*# sourceMappingURL=header.css.map */

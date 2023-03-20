@@ -1,0 +1,70 @@
+.footer {
+  width: 100vw;
+  background-color: #282524;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  padding: 15px;
+  font-size: 20px;
+  font-family: TitanOne-Regular;
+  font-weight: normal;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #146c73;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  font-size: 12px;
+}
+
+.footer__content .mail__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link__icon {
+  height: 32px;
+  margin-right: 8px;
+}
+
+.github-link__icon {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+/*******************************************media*****************************************/
+@media only screen and (max-width: 450px) {
+  .mail {
+    display: none;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
